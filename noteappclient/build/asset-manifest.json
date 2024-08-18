@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b08b91e3.css",
+    "main.js": "/static/js/main.0363325a.js",
+    "static/js/453.7c66614f.chunk.js": "/static/js/453.7c66614f.chunk.js",
+    "static/media/smartcatcrop.jpg": "/static/media/smartcatcrop.001bf5b52c46b059ab1e.jpg",
+    "index.html": "/index.html",
+    "main.b08b91e3.css.map": "/static/css/main.b08b91e3.css.map",
+    "main.0363325a.js.map": "/static/js/main.0363325a.js.map",
+    "453.7c66614f.chunk.js.map": "/static/js/453.7c66614f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b08b91e3.css",
+    "static/js/main.0363325a.js"
+  ]
+}

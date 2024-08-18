@@ -2,6 +2,7 @@
 import React from 'react';
 import {useState} from "react";
 import logo from './logo.svg';
+import catlogo from './smartcatcrop.jpg';
 import './App.css';
 
 type Note = {
@@ -14,29 +15,20 @@ function App() {
   const [notes, setNotes] = useState([
     {
       id:1,
-      title: "note title 1",
-      content: "content 1"
+      title: "Example note title 1",
+      content: "Example note content 1..."
     },
     {
       id:2,
-      title: "note title 2",
-      content: "content 2"
+      title: "Example note title 2",
+      content: "Example note content 2..."
     },
     {
       id:3,
-      title: "note title 3",
-      content: "content 3"
+      title: "Example note title 3",
+      content: "Example note content 3..."
     },
-    {
-      id:4,
-      title: "note title 4",
-      content: "content 4"
-    },
-    {
-      id:5,
-      title: "note title 5",
-      content: "content 5"
-    },
+
   ]);
 
   const [title, setTitle] = useState("");
@@ -120,8 +112,14 @@ function App() {
     <div className="App">
       <div className="App-header">
 
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>CatNote</h2>
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={catlogo} className="App-logo" alt="smartcatcrop" />
+        {/* padding-bottom: 300px; */}
+
+          <h2>CatNotez</h2>
+          <p>
+            Take a quick cat-nap, I mean a cat-note to organize your thought process as you work. Or simply use it as as a one stop shop for sticky notes.
+          </p>
 
       </div>
 
@@ -152,7 +150,7 @@ function App() {
             }
             placeholder="Content"
             rows={10}
-            required></textarea>
+            required></textarea>  
 
             {selectedNote ? (
               <div className="edit-buttons">
@@ -163,7 +161,7 @@ function App() {
             ) : (
               <button type="submit">Add Note</button>
             )}
-            
+      
         </form>
         <div className="notes-grid">
           {notes.map((note)=> (
